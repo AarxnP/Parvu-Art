@@ -16,10 +16,11 @@ export const appConfig: ApplicationConfig = {
     provideNgIconsConfig({
       size: "1.5em",
     }), provideFirebaseApp(() => 
-      initializeApp({"projectId":"parvu-art","appId":"1:564598677316:web:5bc1dbfc2e36840bf80111","storageBucket":
-        "parvu-art.firebasestorage.app","apiKey":
-        "AIzaSyCG6rkgRfHjaQ1QA8YLatUIjQpzRl-3Wdw","authDomain":
-        "parvu-art.firebaseapp.com","messagingSenderId":"564598677316"})), 
-        provideAuth(() => getAuth()), provideFirestore(() => getFirestore()),
+      initializeApp({"projectId":"pag--parvuart","appId":"1:163220573303:web:d3b5796ccbdf3562cd0a72",
+        "storageBucket":"pag--parvuart.firebasestorage.app",
+        "apiKey":"AIzaSyDIju88P7AVoevQFDCKF2W-4wW4z_FIxmY",
+        "authDomain":"pag--parvuart.firebaseapp.com",
+        "messagingSenderId":"163220573303"})), 
+        provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), 
   ]
 };
