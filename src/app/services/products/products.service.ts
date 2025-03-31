@@ -19,18 +19,18 @@ import {
 })
 export class ProductsService {
 
-  private url = 'https://fakestoreapi.com/products';
+  //private url = 'https://fakestoreapi.com/products';
 
   constructor(private http: HttpClient, private firestore: Firestore) { }
 
   getProducts(): Observable<Product[]> {
-    // return this.http.get<Product[]>(this.url);
+    //return this.http.get<Product[]>(this.url);
     const productsRef = collection(this.firestore, "products");
     return collectionData(productsRef) as Observable<Product[]>;
   }
 
   getProduct(id: number): Observable<Product> {
-    // return this.http.get<Product>(`${this.url}/${id}`);
+    //return this.http.get<Product>(`${this.url}/${id}`);
     const productRef = doc(this.firestore, "products", id.toString());
     return docData(productRef) as Observable<Product>;
   }

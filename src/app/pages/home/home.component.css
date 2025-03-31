@@ -1,0 +1,160 @@
+/* Estilo para la imagen en pantallas pequeñas */
+.container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .image-section img {
+    max-width: 300px;
+    border-radius: 15px;
+  }
+  
+  .text-section {
+    padding-left: 20px;
+    text-align: justify;
+  }
+  
+  .title {
+    color: #2b8ecf;
+    font-weight: bold;
+  }
+  
+  .name {
+    color: #e91e63;
+    font-size: 24px;
+  }
+  
+  .description {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    margin: 10px;
+    color: #444;
+  }
+  
+  .social-icons a:hover {
+    color: #e91e63;
+  }
+  
+  .section {
+    padding: 40px 10%;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .image-section img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .text-section {
+    max-width: 50%;
+    text-align: justify;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  p {
+    font-family: 'Arial', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  p strong {
+    color: #2b8ecf;
+    font-weight: bold;
+  }
+  
+  .section {
+    padding: 60px 15%;
+    background-color: #f4f4f4;
+  }
+  
+  .text-section h2 {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: #2b8ecf;
+  }
+  
+  .text-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  /* Estilos responsivos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Aumentar el tamaño de la imagen en pantallas pequeñas */
+    .image-section img {
+      max-width: 100%; /* Ocupa el 100% del contenedor */
+      max-height: 500px; /* Aumentar la altura máxima de la imagen */
+    }
+  
+    .text-section {
+      max-width: 100%;
+      text-align: justify;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .name {
+      font-size: 22px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  
+    .social-icons a {
+      font-size: 18px;
+    }
+  }
+  

@@ -1,6 +1,8 @@
 <div class="container-fluid text-center">
     <h1>Productos</h1>
+    @if(role == "admin"){
     <button type="button" class="btn btn-primary mb-3" routerLink="/product-form/0">Agregar producto</button>
+    }
     <div class="d-flex justify-content-center align-content-center flex-wrap gap-5">
         @for(product of products; track $index){
             <div class="card" style="width: 18rem;" (click)="goToProduct(product.id)">

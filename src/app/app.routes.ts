@@ -8,6 +8,7 @@ import { canActivate, redirectUnauthorizedTo } from "@angular/fire/auth-guard";
 import { permissionsGuard } from './guards/permissions/permissions.guard';
 import { ProductFormComponent } from './pages/product-form/product-form.component';
 import { warningsGuard } from './guards/warnings/warnings.guard';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -22,6 +23,7 @@ export const routes: Routes = [
         canActivate: [permissionsGuard]
     },
     { path: 'product-form/:id', component: ProductFormComponent, canDeactivate: [warningsGuard] },
+    { path: 'checkout', component: CheckoutComponent},
     { path: 'login', component: LoginComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '**', component: NotFoundComponent }
